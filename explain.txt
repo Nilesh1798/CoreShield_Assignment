@@ -1,0 +1,16 @@
+Approach for Processing Map Data with Metadata
+1.Load and Parse JSON Data
+   Read the location and metadata JSON files.
+   Convert them into Python dictionaries/lists for easy processing.
+2.Merge Data Based on id
+  Create a dictionary from the locations JSON using id as the key (for quick lookups).
+  Loop through the metadata and attach the matching location details.
+3.Count Locations by Type
+  Use a dictionary to count how many locations exist for each type (e.g., restaurants, hotels, cafes).
+4.Calculate Average Ratings
+  Maintain a sum of ratings and a count of locations for each type.
+  Compute the average by dividing the total sum by the count.
+5.Find the Location with the Most Reviews
+  Iterate through the merged data and track the location with the highest number of reviews.
+6.Check for Incomplete Data (Bonus)
+  Identify entries where latitude or longitude is missing and flag them as incomplete.
